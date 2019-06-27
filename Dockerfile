@@ -1,10 +1,10 @@
-FROM alpine:3.6
+FROM alpine:3.10
 #
 RUN apk --no-cache add exim && \
     apk --no-cache add exim-dnsdb && \
     apk --no-cache add bind-tools && \
     #mkdir /var/log/exim /var/spool/exim /usr/lib/exim && \
-	mkdir /var/log/exim /var/spool/exim && \
+	mkdir /var/spool/exim && \
     ln -sf /dev/stdout /var/log/exim/mainlog && \
     ln -sf /dev/stderr /var/log/exim/panic && \
     ln -sf /dev/stderr /var/log/exim/reject && \

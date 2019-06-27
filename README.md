@@ -2,7 +2,7 @@
 
 For use in Kubernetes and other docker orchestration environments as an egress email relay with governance options.
 
-  - Lightweight exim 3.86 based on alpine 3.6
+  - Lightweight exim 4.92 based on alpine 3.10
   - Basic exim smtp relay
   - Options for governance of egress messages
 
